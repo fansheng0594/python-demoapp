@@ -1,0 +1,6 @@
+run_tests:
+    image: python:3.12-rc-alpine3.17
+    before_script:
+        - apt-get update && apt-get install make
+    script:
+        - make test
